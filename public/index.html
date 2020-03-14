@@ -6,19 +6,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>COVID-19 / Live Tracking</title>
-  <meta name="author" content="name">
-  <meta name="description" content="description here">
-  <meta name="keywords" content="keywords,here">
   <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-  </head>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
+</head>
+
   <body style="background-color: rgb(255, 255, 255)">
+    
       <!-- Header -->
       <h1 align="center" id="title" class="header">COVID-19.Tracker</h1>
-      <h2 align="center" id="subtitle" class="subheader">An open-source pandemic tracker.</h2>
-      <button id="switcher" onclick="dark()">Dark Mode</button>
+      <h2 align="center" id="subtitle" class="subheader">A pandemic analysis tool.</h2>
+
+      <hr>
+
+      <!-- Brief Statistics -->
+
+      <div class="brief">
+        <p id="cdrtext">Cases: <br><br>Deaths: <br><br>Recovered: </p>
+      </div>
+
+      <!-- Dark Mode Switch -->
+      
+      <div class="sw">
+        <button id="switcher" class="switch" onclick="dark()">Dark Mode</button>
+        <p class="category">Switch to <a href="countries.html">Country-wise sorted data</a></p>
+      </div>
+
       <!-- Charts -->
-      <canvas id="covid"></canvas>
-      <script src="js/charts.js"></script>
+
+      <canvas class="stats" id="covid"></canvas>
+      <script src="js/index.js"></script>
+      <script src="js/brief.js"></script>
+      <script src="js/toggle.js"></script>
+
   </body>
 </html>

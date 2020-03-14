@@ -7,3 +7,6 @@ This is a simple tracking website hosted on GitHub for COVID-19 statistics.
 * Javascript
 * Chart.JS
 * Axios
+
+## Special Thanks
+I would like to thank my friend Visual who contributed a little bit!
