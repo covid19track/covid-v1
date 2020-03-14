@@ -24,6 +24,7 @@
   "homepage": "https://github.com/pasenidis/covid19-stats#readme",
   "dependencies": {
     "http-server": "^0.12.1",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "unirest": "^0.6.0"
   }
 }
