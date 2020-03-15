@@ -2,6 +2,7 @@ var ctx = document.getElementById('covid').getContext('2d');
 var title = document.getElementById('title');
 var subtitle = document.getElementById('subtitle');
 var button = document.getElementById('switcher');
+var link = document.getElementById('categ');
 
 let graphcountries = [];
 let graphcases     = [];
@@ -35,5 +36,7 @@ var chart = new Chart(ctx, {
     },
 
     // Configuration options go here
-    options: {}
+    options: {
+        responsive: true
+    }
 });
