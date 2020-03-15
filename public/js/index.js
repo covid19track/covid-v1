@@ -5,7 +5,7 @@ var button = document.getElementById('switcher');
 var link = document.getElementById('categ');
 
 let graphcountries = [];
-let graphcases     = [];
+let graphcases = [];
 
 fetch('https://coronavirus-19-api.herokuapp.com/countries')
     .then((resp) => resp.json())
