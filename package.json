@@ -4,7 +4,7 @@
   "description": "An open-source pandemic tracker",
   "main": "main.js",
   "scripts": {
-    "page": " http-server",
+    "start": "http-server",
     "test": "node main.js"
   },
   "repository": {
