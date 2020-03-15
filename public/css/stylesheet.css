@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
-
 html {
     margin: 0;
     padding: 0;
@@ -13,13 +12,14 @@ html {
     font-size: 25px;
 }
 
-p:hover {
-    color: #111;
-}
-
 hr {
     margin-left: 35%;
     margin-right: 35%;
+}
+
+p {
+    font-size: 25px;
+    
 }
 
 .sw {
@@ -34,7 +34,8 @@ hr {
 }
 
 .switch {
-    background-color: #333; /* Green */
+    background-color: #333;
+    /* Green */
     border: none;
     color: white;
     padding: 6px 19px;
@@ -50,4 +51,29 @@ hr {
 .switch:hover {
     background-color: #555555;
     color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
   }
