@@ -1,27 +1,17 @@
 let countries = document.getElementById('countries');
 
-function createNode(element) {
-    return document.createElement(element);
-}
-
-function append(parent, el) {
-    return parent.appendChild(el);
-}
-
-function showAll(casen, deathn, recn) {
-    return `Cases: <strong>${casen}</strong> <br><br> Deaths: <strong>${deathn}</strong> <br><br> Recovered: <strong>${recn}</strong>`;
-}
+function appendText(inserted) {
+    var txt = document.createElement("p");
+    txt.innerHTML = inserted;         // Create text with DOM
+    $("body").append(txt);   // Append new elements
+  }
 
 fetch('https://coronavirus-19-api.herokuapp.com/countries')
     .then((resp) => resp.json())
     .then(function (data) {
-        let country = data.country;
-        let cases = data.cases;
-        let todayCases = data.todayCases;
-        let recovered = data.recovered;
-        let active = data.active;
-        let critical = data.active;
-
+        for (let i = 0; i < data.length; i++) {;
+            appendText(`Country: ${data[i].country} <br> Cases: ${data[i].cases} <br> Recovered ${data[i].recovered}`)
+        }
     })
     .catch(function (error) {
         console.log(error);
