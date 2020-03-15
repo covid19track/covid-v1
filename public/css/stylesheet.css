@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
-html {
-    margin: 0;
-    padding: 0;
-}
-
-.header, .subheader {
-    font-family: 'Josefin Slab', serif;
+html, body {
+    width: 100%;
+    height: 100%;
 }
 
 .category {
@@ -26,15 +21,13 @@ p {
 }
 
 .brief {
-    font-family: 'Josefin Slab', serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 26px;
     text-align: center;
 }
 
 .switch {
     background-color: #333;
-    /* Green */
     border: none;
     color: white;
     padding: 6px 19px;
@@ -76,4 +69,8 @@ li a {
 
 li a:hover {
     background-color: #111;
+}
+
+.stats {
+    padding: 10px 10px 10px 10px;
 }
