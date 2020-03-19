@@ -7,6 +7,10 @@ let link = document.getElementById('categ');
 let graphcountries = [];
 let graphcases = [];
 
+function main() {
+    reload();
+}
+
 function reload() {
 
     fetch('https://coronavirus-19-api.herokuapp.com/countries')
