@@ -1,5 +1,5 @@
-# COVID-19 / Statistics
-COVID-19.Tracker is an open-source pandemic analysis tool, with it you can get information about the COVID-19 coronavirus outbreak.
+# COVID-19.Tracker
+### COVID-19.Tracker is an open-source pandemic analysis tool, with it you can get information about the COVID-19 coronavirus outbreak.
 
 ## Under the hood
 * HTML5/CSS/JS is the frontend
