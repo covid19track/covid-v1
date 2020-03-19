@@ -11,6 +11,7 @@
 
 <body onload="reload()">
 
+
   <ul class="sidenav">
     <li><a class="active" href="index.html">Top 10 Countries Diagram</a></li>
     <li><a href="countries.html">Total Countries</a></li>
@@ -32,19 +33,19 @@
 
   <div class="sw">
     <button id="switcher" class="switch" onclick="dark()">Dark Mode</button>
-    <button id="reload" class="reloader" onclick="">Refresh</button>
+    <button id="reload" class="reloader" onclick="main()">Refresh</button>
   </div>
 
   <!-- Charts -->
-
 
   <div class="chart" id="chart">
     <canvas class="stats" id="covid" aria-label="Your browser does not support my webpage!"></canvas>
   </div>
 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  
+
   <script src="js/index.js"></script>
   <script src="js/brief.js"></script>
   <script src="js/toggle.js"></script>

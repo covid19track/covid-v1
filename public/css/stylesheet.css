@@ -1,6 +1,7 @@
 body {
     padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-image: url();
 }
 
 a {
@@ -30,7 +31,7 @@ p {
     text-align: center;
 }
 
-.switch, .reloader{
+.switch, .reloader {
     background-color: #333;
     border: none;
     color: white;
@@ -81,4 +82,18 @@ li a:hover {
 
 .chart {
     margin: 0;
+}
+
+/* WTF */
+
+#video-background {
+    /*  making the video fullscreen  */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
 }
