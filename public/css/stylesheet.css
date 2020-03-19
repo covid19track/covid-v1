@@ -30,7 +30,7 @@ p {
     text-align: center;
 }
 
-.switch {
+.switch, .reloader{
     background-color: #333;
     border: none;
     color: white;
@@ -44,7 +44,7 @@ p {
     cursor: pointer;
 }
 
-.switch:hover {
+.switch:hover, .reloader:hover {
     background-color: #555555;
     color: white;
 }
