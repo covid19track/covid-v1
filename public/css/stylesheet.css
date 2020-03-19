@@ -1,6 +1,10 @@
-html, body {
-    width: 100%;
-    height: 100%;
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
 }
 
 .category {
@@ -54,10 +58,14 @@ ul {
 }
 
 li {
+    margin: 0;
+    padding: 0;
     float: left;
 }
 
 li a {
+    margin: 0;
+    padding: 0;
     display: block;
     color: white;
     text-align: center;
@@ -71,6 +79,6 @@ li a:hover {
     background-color: #111;
 }
 
-.stats {
-    padding: 10px 10px 10px 10px;
+.chart {
+    margin: 0;
 }

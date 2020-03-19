@@ -5,13 +5,11 @@
   <meta charset="UTF-8">
   <title>COVID-19 / Live Tracking</title>
   <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 
 </head>
 
-<body style="background-color: rgb(255, 255, 255); font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;text-rendering: optimizeLegibility;">
+<body>
 
   <ul class="sidenav">
     <li><a class="active" href="index.html">Top 10 Countries Diagram</a></li>
@@ -38,8 +36,14 @@
 
   <!-- Charts -->
 
-  <canvas class="stats" id="covid" aria-label="Your browser does not support my webpage!"></canvas>
 
+  <div class="chart" id="chart">
+    <canvas class="stats" id="covid" aria-label="Your browser does not support my webpage!"></canvas>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
   <script src="js/index.js"></script>
   <script src="js/brief.js"></script>
   <script src="js/toggle.js"></script>

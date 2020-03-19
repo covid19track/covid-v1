@@ -1,12 +1,12 @@
 # COVID-19 / Statistics
-This is a simple tracking website hosted on GitHub for COVID-19 statistics.
+COVID-19.Tracker is an open-source pandemic analysis tool, with it you can get information about the COVID-19 coronavirus outbreak.
 
 ## Under the hood
-* HTML5
-* CSS
-* Javascript
-* Chart.JS
-* Axios
+* HTML5/CSS/JS is the frontend
+* NodeJS + Express is the backend
+* Axios is fetching the data from [this](https://coronavirus-19-api.herokuapp.com/countries)
 
-## Special Thanks
-I would like to thank my friend Visual who contributed a little bit!
+## The Team Behind This
+1. Edward
+    * [Twitter](https://twitter.com/EdwardPasenidis)
+2. Lean

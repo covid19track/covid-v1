@@ -1,30 +1,16 @@
 {
   "name": "covid19-stats",
-  "version": "1.0.0",
-  "description": "An open-source pandemic tracker",
-  "main": "main.js",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "start": "http-server",
-    "test": "node main.js"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pasenidis/covid19-stats.git"
-  },
-  "keywords": [
-    "covid-19",
-    "tracker",
-    "pandemic"
-  ],
-  "author": "Edward Pasenidis <edwardp@thecodinglab.tk>",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/pasenidis/covid19-stats/issues"
-  },
-  "homepage": "https://github.com/pasenidis/covid19-stats#readme",
   "dependencies": {
-    "http-server": "^0.12.1",
-    "live-server": "^1.2.1",
-    "unirest": "^0.6.0"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
   }
 }
