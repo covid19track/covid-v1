@@ -1,5 +1,3 @@
-var button = document.getElementById('switcher');
-
 function dark() {
         if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
 
