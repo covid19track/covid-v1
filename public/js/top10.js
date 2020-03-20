@@ -8,8 +8,8 @@ let link      = document.getElementById('categ');
 
 console.log(`Canvas found: ${ctx}`);
 
-let graphcountries = [];
-let graphcases = [];
+let graphcountries      = [];
+let graphcases          = [];
 
 function reload() {
 
@@ -70,6 +70,6 @@ function reload() {
         })
 
         .catch(function (error) {
-            console.log(error);
+            console.log(`An error occured: ${error}`);
         })
 }
