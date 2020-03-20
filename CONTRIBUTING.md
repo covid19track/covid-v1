@@ -4,9 +4,9 @@ Hello, the COVID19.Tracker team wants you to read this document, it contains inf
 If you want any help, any information about the project, you can always ask Edward at [this e-mail](mailto:solarsailor@protonmail.com). 
 
 Here are some important & useful resources you should read: 
-- Project's Code of Conduct: [Markdown]()
-- License we use, MIT License: [Markdown]()
-- README file for basic information: [Markdown]()
+- Project's Code of Conduct: [Markdown](https://github.com/pasenidis/covid19-stats/blob/master/CODE_OF_CONDUCT.md)
+- License we use, MIT License: [Markdown](https://github.com/pasenidis/covid19-stats/blob/master/LICENSE)
+- README file for basic information: [Markdown](https://github.com/pasenidis/covid19-stats/blob/master/README.md)
 
 ## Testing
 We don't have a specific group of people that are engaged in the application testing.
