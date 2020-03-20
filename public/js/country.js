@@ -9,15 +9,13 @@ function refresh() {
         .then((resp) => resp.json())
         .then(function (data) {
             for (let country in data) {
-                ul = document.createElement("div");
+                ul = document.createElement("p");
                 listappend(ul, country);
-                
-                // appendText(`CouSwedenSwedenntry: ${data[i].country} <br> Cases: ${data[i].cases} <br> Recovered ${data[i].recovered}`);
             }
         })
         .catch(function (error) {
             console.log(error);
         })
 
-        console.log("h");
+        console.log("FORA!");
 }
