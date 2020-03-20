@@ -31,7 +31,7 @@ Try reading the code we've already written.
 We strive to write readable code for open-source projects.
 
 Some of the rules:
-- Use tabs and not spaces, for better readability;
+- When indenting, use tabs and not spaces, for better readability;
 - We always put spaces after list items, method parameters and variables; e.g.: `1 += 5;` and `[1, 5, 7]` and not `1+=5` or `[1,5,7]`;
 - This is open source software. Consider the people who will read your code;
 - Add comments when making a change or a fix, administrators should understand if a pull request should be approved.
