@@ -1,1 +1,41 @@
-<h1>countries</h1>
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>COVID-19.Tracker</title>
+    include head.pug
+  </head>
+  <body onload="reload()">
+
+    include nav.pug
+
+    <div class="section">
+      <div class="container">
+
+        <!-- Header -->
+        <h1 align="center" id="title" class="header">COVID-19.Tracker</h1>
+        <h2 align="center" id="subtitle" class="subheader">A pandemic analysis tool.</h2>
+
+        <!-- Brief Statistics -->
+        <div class="brief">
+          <p id="cdrtext">Cases: <br><br>Deaths: <br><br>Recovered: </p>
+        </div>
+
+        <!-- Switches -->
+        <div class="sw">
+          <button id="switcher" class="switch" onclick="dark()">Dark Mode</button>
+          <button id="reload" class="reloader" onclick="main()">Refresh</button>
+        </div>
+
+        <!-- Charts -->
+        <div class="chart" id="chart">
+          <canvas class="stats" id="covid" aria-label="Your browser does not support my webpage!"></canvas>
+        </div>
+
+      </div>
+    </div>
+
+  <script src="js/countries.js"></script>
+  </body>
+
+</html>
