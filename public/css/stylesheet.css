@@ -1,3 +1,9 @@
 body {
   font-family: 'Kanit', sans-serif;
 }
+
+@media screen and (max-width: 1020px) {
+  body > nav > div.navbar-end {
+    display: none;
+  }
+}
