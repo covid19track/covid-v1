@@ -1,5 +1,5 @@
 # Contributing
-Hello, the COVID19.Tracker team wants you to read this document, it contains information about how you should contribute to the project.
+Hello, the COVID-19.Tracker team wants you to read this document, it contains information about how you should contribute to the project.
 
 If you want any help, any information about the project, you can always ask Edward at [this e-mail](mailto:solarsailor@protonmail.com). 
 
