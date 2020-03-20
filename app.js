@@ -4,6 +4,8 @@ let path = require('path');
 let logger = require('morgan');
 
 let indexRouter = require('./routes/index');
+let countriesRouter = require('./routes/countries');
+
 
 let app = express();
 
@@ -17,6 +19,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/countries', countriesRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
