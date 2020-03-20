@@ -1,5 +1,5 @@
 # Contributing
-Hello, the COVID19.Tracker team wants you to read this document, it contains information about how you should contribute to the project.
+Hello, the COVID-19.Tracker team wants you to read this document, it contains information about how you should contribute to the project.
 
 If you want any help, any information about the project, you can always ask Edward at [this e-mail](mailto:solarsailor@protonmail.com). 
 
@@ -31,7 +31,7 @@ Try reading the code we've already written.
 We strive to write readable code for open-source projects.
 
 Some of the rules:
-- Use tabs and not spaces, for better readability;
+- When indenting, use tabs and not spaces, for better readability;
 - We always put spaces after list items, method parameters and variables; e.g.: `1 += 5;` and `[1, 5, 7]` and not `1+=5` or `[1,5,7]`;
 - This is open source software. Consider the people who will read your code;
 - Add comments when making a change or a fix, administrators should understand if a pull request should be approved.
