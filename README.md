@@ -14,13 +14,16 @@ Fetching data:
 - Automated chart generation based on information about the ten most infected countries, this happens in real time.
 
 ## Under the hood
-* HTML5/CSS/JS is the frontend
+* HTML5/CSS/JS for the basics of frontend
+* Bulma for better styles
 * NodeJS + Express is the backend
+* Pug to preprocess HTML files
 * Axios is fetching the data from [this](https://coronavirus-19-api.herokuapp.com/countries)
 
 ## The Team Behind This
 1. Edward
     * [Twitter](https://twitter.com/EdwardPasenidis)
+    * [Discord](https://discord.gg/vBfeT8D)
 2. Lean
     * [GitHub](https://github.com/TasosY2K)
     * [Discord](https://xn--rihy934p.ws/discord)
