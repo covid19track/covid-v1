@@ -6,7 +6,6 @@ let logger = require('morgan');
 let indexRouter = require('./routes/index');
 let countriesRouter = require('./routes/countries');
 
-
 let app = express();
 
 // view engine setup
