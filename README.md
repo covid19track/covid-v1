@@ -4,7 +4,7 @@
 ## The Concept
 COVID-19.Tracker is a web-server that fetches, processes and renders data related to the 2019-2020's coronavirus outbreak.
 
-Fetching data: 
+Fetching data:
 - Summary; how many people are infected, how many recovered and how many have died.
 - Country-wise data; recovered per country, how many cases were found a specific day in a country, etc.
 - Automated chart generation based on information about the ten most infected countries, this happens in real time.
@@ -18,3 +18,5 @@ Fetching data:
 1. Edward
     * [Twitter](https://twitter.com/EdwardPasenidis)
 2. Lean
+    * [GitHub](https://github.com/TasosY2K)
+    * [Discord](https://xn--rihy934p.ws/discord)
