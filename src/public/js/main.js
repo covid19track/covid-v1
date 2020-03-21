@@ -1,5 +1,4 @@
 console.log('main.JS initialization');
-
 // navbar responsiveness
 $(document).ready(() => {
   $('.navbar-burger').click(() => {

@@ -5,12 +5,14 @@
   "scripts": {
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "build-css": "node-sass src/sass/main.sass -o src/public/css/main.css",
     "validate": "npm-run-all --parallel lint",
     "start": "node ./src/bin/www"
   },
   "dependencies": {
     "acorn": ">=5.7.4",
+    "bulma": "0.8.0",
+    "bulma-extensions": "6.2.7",
+    "compile-sass": "1.1.0",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
