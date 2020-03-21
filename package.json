@@ -3,6 +3,10 @@
   "version": "0.0.3",
   "private": true,
   "scripts": {
+    "test": "nyc mocha",
+    "watch:test": "mocha --watch",
+    "lint": "eslint src",
+    "validate": "npm-run-all --parallel test lint",
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -13,5 +17,12 @@
     "ipinfo": "^1.3.9",
     "morgan": "~1.9.1",
     "pug": "2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "ghooks": "1.3.2",
+    "mocha": "3.0.0",
+    "npm-run-all": "2.3.0",
+    "nyc": "15.0.0"
   }
 }
