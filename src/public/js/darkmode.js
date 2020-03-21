@@ -69,33 +69,33 @@ function getCookie(name) {
 }
 
 $(document).ready(() => {
-  let dark_cookie = getCookie('darkmode');
+  let darkCookie = getCookie('darkmode');
 
-  if (dark_cookie == 'true') {
+  if (darkCookie == 'true') {
     setDarkMode();
   }
 
-  if (dark_cookie == 'false') {
+  if (darkCookie == 'false') {
     setLightMode();
   }
 
-  if (!dark_cookie) {
+  if (!darkCookie) {
     setLightMode();
   }
 
   $('#darkmode_btn').click(() => {
-    dark_cookie = getCookie('darkmode');
-    if (dark_cookie == 'true') {
+    darkCookie = getCookie('darkmode');
+    if (darkCookie == 'true') {
       setCookie('darkmode', 'false', 1);
       setLightMode();
     }
 
-    if (dark_cookie == 'false') {
+    if (darkCookie == 'false') {
       setCookie('darkmode', 'true', 1);
       setDarkMode();
     }
 
-    if (!dark_cookie) {
+    if (!darkCookie) {
       setCookie('darkmode', 'true', 1);
       setDarkMode();
     }

@@ -17,7 +17,7 @@ function loadTop10() {
             graphcases[i] = data[i].cases;
           }
 
-          const covid_chart = new Chart(ctx, {
+          const covidChart = new Chart(ctx, {
             type: 'bar',
             data: {
               labels: graphcountries,

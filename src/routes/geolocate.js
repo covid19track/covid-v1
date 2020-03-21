@@ -1,18 +1,18 @@
 const express = require('express');
-const router = express.Router();
+const router = new express.Router();
 const ipInfo = require('ipinfo');
 
 router.get('/', (req, res, next) => {
-  let ip_address = req.headers['x-forwarded-for'];
+  let ipAddress = req.headers['x-forwarded-for'];
 
-  if (ip_address) {
-    const list = ip_address.split(',');
-    ip_address = list[list.length-1];
+  if (ipAddress) {
+    const list = ipAddress.split(',');
+    ipAddress = list[list.length-1];
   } else {
-    ip_address = req.connection.remoteAddress;
+    ipAddress = req.connection.remoteAddress;
   }
 
-  ipInfo(ip_address, (err, data) => {
+  ipInfo(ipAddress, (err, data) => {
     if (err) {
       res.status(503);
       console.log('ipInfo Error:', err);
