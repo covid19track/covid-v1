@@ -4,8 +4,8 @@ let ctx = document.getElementById('covid').getContext('2d');
 
 //console.log(`Canvas found: ${ctx}`);
 
-let graphcountries = [];
-let graphcases = [];
+let graphcountries      = [];
+let graphcases          = [];
 
 $(document).ready(() => {
 

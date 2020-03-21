@@ -18,7 +18,7 @@ Fetching data:
 * Bulma for better styles
 * NodeJS + Express is the backend
 * Pug to preprocess HTML files
-* Axios is fetching the data from [this](https://coronavirus-19-api.herokuapp.com/countries)
+* Fetching the data from this [API](https://coronavirus-19-api.herokuapp.com/countries)
 
 ## The Team Behind This
 1. Edward
