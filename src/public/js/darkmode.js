@@ -1,16 +1,27 @@
 console.log('darkmode.js Intialization');
 
-let pheader    = document.getElementById("pheader");
-let psubheader = document.getElementById("psubheader");
-
 function setDarkMode() {
-  pheader.style.color = '#333';
-  psubheader.style.color = '#333';
+  $('body').addClass("has-text-light has-background-dark");
+  $('body').removeClass("has-text-dark has-background-light");
+
+  $('nav').addClass("is-black");
+  $('nav').removeClass("is-dark");
+
+  $('#darkmode_btn').addClass("is-dark");
+  $('#darkmode_btn').removeClass("is-light");
+  $("#darkmode_btn").html('Light Mode&nbsp;<i class="las la-sun"></i>')
 }
 
 function setLightMode() {
-  pheader.style.color = '#fff';
-  psubheader.style.color = '#fff';
+  $('body').addClass("has-text-dark has-background-light");
+  $('body').removeClass("has-text-light has-background-dark");
+
+  $('nav').addClass("is-dark");
+  $('nav').removeClass("is-black");
+
+  $('#darkmode_btn').addClass("is-light");
+  $('#darkmode_btn').removeClass("is-dark");
+  $("#darkmode_btn").html('Dark Mode&nbsp;<i class="las la-moon"></i>')
 }
 
 function setCookie(name, value, days) {
