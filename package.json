@@ -7,7 +7,7 @@
     "watch:test": "mocha --watch",
     "lint": "eslint src",
     "validate": "npm-run-all --parallel test lint",
-    "start": "node ./bin/www"
+    "start": "node ./src/bin/www"
   },
   "dependencies": {
     "acorn": ">=5.7.4",
