@@ -71,9 +71,3 @@ body {
       transform: translateX(0);
     }
   }
-
-@media screen and (max-width: 1020px) {
-  body > nav > div.navbar-end {
-    display: none;
-  }
-}
