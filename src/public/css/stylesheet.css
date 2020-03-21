@@ -3,12 +3,74 @@ body {
 }
 
 #header {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .navbar-brand > a {
   font-family: 'Fredoka One', cursive;
 }
+
+.flag-img {
+  transition-duration: 0.4s;
+  animation: img-slide-down 0.6s ease;
+  margin-top: 30px;
+}
+
+.stat-h {
+  transition-duration: 0.4s;
+  animation: h-slide-right 0.6s ease;
+}
+
+.stat-p {
+  transition-duration: 0.4s;
+  animation: p-slide-left 0.6s ease;
+  margin-bottom: 40px;
+}
+
+#header, #subheader {
+  transition-duration: 0.4s;
+  animation: h-slide-up 0.6s ease;
+}
+
+@keyframes img-slide-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-200px);
+    } 100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+@keyframes h-slide-right {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    } 100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+@keyframes h-slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    } 100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+@keyframes p-slide-left {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    } 100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 @media screen and (max-width: 1020px) {
   body > nav > div.navbar-end {

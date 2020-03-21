@@ -19,9 +19,9 @@ function geolocation() {
               data.forEach((item, i) => {
                 if (item.country == country_name) {
                   $('.brief').html(`
-                  <img style="margin-top:30px;" src="https://www.countryflags.io/${country_code}/shiny/64.png">
-                  <h1>Statistics For ${country_name}</h1>
-                  <p style="margin-bottom: 40px;">Cases: ${item.cases} | Deaths: ${item.deaths} | Recovered: ${item.recovered}</p>
+                  <img class="flag-img" src="https://www.countryflags.io/${country_code}/shiny/64.png">
+                  <h1 class="stat-h">Statistics For ${country_name}</h1>
+                  <p class="stat-p">Cases: ${item.cases} | Deaths: ${item.deaths} | Recovered: ${item.recovered}</p>
                   `);
                 }
               });
