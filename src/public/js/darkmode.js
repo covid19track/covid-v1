@@ -1,11 +1,16 @@
 console.log('darkmode.js Intialization');
 
+let pheader    = document.getElementById("pheader");
+let psubheader = document.getElementById("psubheader");
+
 function setDarkMode() {
-  //add changes here
+  pheader.style.color = '#333';
+  psubheader.style.color = '#333';
 }
 
 function setLightMode() {
-  //add changes here
+  pheader.style.color = '#fff';
+  psubheader.style.color = '#fff';
 }
 
 function setCookie(name, value, days) {

@@ -5,7 +5,7 @@
     <title>COVID-19.Tracker</title>
     include head.pug
   </head>
-  <body onload="reload()">
+  <body>
 
     include nav.pug
 
@@ -13,8 +13,8 @@
       <div class="container">
 
         <!-- Header -->
-        <h1 align="center" id="title" class="header">COVID-19.Tracker</h1>
-        <h2 align="center" id="subtitle" class="subheader">A pandemic analysis tool.</h2>
+        <h1 align="center" id="pheader" class="header">COVID-19.Tracker</h1>
+        <h2 align="center" id="psubheader" class="subheader">A pandemic analysis tool.</h2>
 
         <!-- Brief Statistics -->
         <div class="brief">
@@ -23,7 +23,7 @@
 
         <!-- Switches -->
         <div class="sw">
-          <button id="switcher" class="switch" onclick="dark()">Dark Mode</button>
+          <button id="switcher" class="switch" onclick="setDarkMode()">Dark Mode</button>
           <button id="reload" class="reloader" onclick="main()">Refresh</button>
         </div>
 
@@ -35,7 +35,6 @@
       </div>
     </div>
 
-  <script src="js/countries.js"></script>
   </body>
 
 </html>
