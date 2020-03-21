@@ -1,6 +1,10 @@
 # COVID-19.Tracker
 ### COVID-19.Tracker is an open-source pandemic analysis tool, with it you can get information about the COVID-19 coronavirus outbreak.
 
+<a href="https://bulma.io">
+<img src="https://bulma.io/images/made-with-bulma--dark.png" alt="Made with Bulma" width="128" height="24">
+</a>
+
 ## Contributing
 Open-source contribution is amazing, if you want to help consider reading the contributing document.
 Read it [here](https://github.com/pasenidis/covid19-stats/blob/master/CONTRIBUTING.md).
