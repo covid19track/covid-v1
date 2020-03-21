@@ -2,6 +2,14 @@ body {
   font-family: 'Baloo Thambi 2', cursive;
 }
 
+#header {
+  margin-top: 10%;
+}
+
+.navbar-brand > a {
+  font-family: 'Fredoka One', cursive;
+}
+
 @media screen and (max-width: 1020px) {
   body > nav > div.navbar-end {
     display: none;

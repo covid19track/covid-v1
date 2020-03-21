@@ -4,11 +4,14 @@ function setDarkMode() {
   $('body').addClass("has-text-light has-background-dark");
   $('body').removeClass("has-text-dark has-background-light");
 
+  $('#navMenu').addClass("has-background-black");
+  $('#navMenu').removeClass("has-background-dark");
+
   $('nav').addClass("is-black");
   $('nav').removeClass("is-dark");
 
-  $('#darkmode_btn').addClass("is-dark");
-  $('#darkmode_btn').removeClass("is-light");
+  $('#darkmode_btn').addClass("is-light");
+  $('#darkmode_btn').removeClass("is-black");
   $("#darkmode_btn").html('Light Mode&nbsp;<i class="las la-sun"></i>')
 }
 
@@ -16,11 +19,14 @@ function setLightMode() {
   $('body').addClass("has-text-dark has-background-light");
   $('body').removeClass("has-text-light has-background-dark");
 
+  $('#navMenu').addClass("has-background-dark");
+  $('#navMenu').removeClass("has-background-black");
+
   $('nav').addClass("is-dark");
   $('nav').removeClass("is-black");
 
-  $('#darkmode_btn').addClass("is-light");
-  $('#darkmode_btn').removeClass("is-dark");
+  $('#darkmode_btn').addClass("is-black");
+  $('#darkmode_btn').removeClass("is-light");
   $("#darkmode_btn").html('Dark Mode&nbsp;<i class="las la-moon"></i>')
 }
 
