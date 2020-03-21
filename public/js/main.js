@@ -1,1 +1,1 @@
-console.log('Main.JS initialization');
+console.log('main.JS initialization');
