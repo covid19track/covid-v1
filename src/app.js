@@ -7,6 +7,7 @@ const indexRouter = require('./routes/index');
 const countriesRouter = require('./routes/countries');
 const developersRouter = require('./routes/developers');
 const geolocateRouter = require('./routes/geolocate');
+const infoRouter = require('./routes/info');
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use('/', indexRouter);
 app.use('/countries', countriesRouter);
 app.use('/geolocate', geolocateRouter);
 app.use('/developers', developersRouter);
+app.use('/info', infoRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
