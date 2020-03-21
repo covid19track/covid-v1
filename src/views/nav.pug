@@ -1,19 +1,24 @@
-<nav class="navbar is-dark">
+<nav class="navbar">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">COVID-19.Tracker&nbsp;<i class="las la-biohazard"></i></a>
+    <a role="button" class="navbar-burger">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </div>
-  <div class="navbar-menu">
+  <div class="navbar-menu" id="navMenu">
     <div class="navbar-start">
       <a class="navbar-item" href="/">Home</a>
       <a class="navbar-item" href="/countries">Total Countries</a>
       <a class="navbar-item" href="/developers">Developers</a>
     </div>
-  </div>
-  <div class="navbar-end">
-    <div class="navbar-item">
-      <div class="buttons">
-        <a class="button is-primary refresh-btn">Refresh Data&nbsp;<i class="las la-redo-alt"></i></a>
-        <a class="button is-light" id="darkmode_btn"></a>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary refresh-btn">Refresh Data&nbsp;<i class="las la-redo-alt"></i></a>
+          <a class="button is-light" id="darkmode_btn"></a>
+        </div>
       </div>
     </div>
   </div>
