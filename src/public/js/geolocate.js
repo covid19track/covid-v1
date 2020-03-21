@@ -37,6 +37,10 @@ function geolocation() {
 }
 
 $('.refresh-btn').click(() => {
+  $(".refresh-btn > i").css({"transition-duration": "1.5s", "transform": "rotate(360deg)"});
+  $(".refresh-btn > i").bind("transitionend", () => {
+    $(".refresh-btn > i").css({"transition-duration": "", "transform": ""});
+  });
   geolocation();
 });
 
