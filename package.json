@@ -1,6 +1,6 @@
 {
   "name": "covid19-stats",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "scripts": {
     "test": "nyc mocha",
