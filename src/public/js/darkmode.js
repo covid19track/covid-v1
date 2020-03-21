@@ -16,7 +16,7 @@ function setDarkMode() {
 
   $('#darkmode_btn').addClass('is-light');
   $('#darkmode_btn').removeClass('is-black');
-  $('#darkmode_btn').html('Light Mode&nbsp;<i class=\'las la-sun\'></i>')
+  $('#darkmode_btn').html('Light Mode&nbsp;<i class=\'las la-sun\'></i>');
 }
 
 /**
@@ -35,7 +35,7 @@ function setLightMode() {
 
   $('#darkmode_btn').addClass('is-black');
   $('#darkmode_btn').removeClass('is-light');
-  $('#darkmode_btn').html('Dark Mode&nbsp;<i class=\'las la-moon\'></i>')
+  $('#darkmode_btn').html('Dark Mode&nbsp;<i class=\'las la-moon\'></i>');
 }
 
 /**
@@ -46,11 +46,11 @@ function setLightMode() {
 function setCookie(name, value, days) {
   let expires = '';
   if (days) {
-    let date = new Date();
+    const date = new Date();
     date.setTime(date.getTime() + (days*24*60*60*1000));
     expires = '; expires=' + date.toUTCString();
   }
-  document.cookie = name + '=' + (value || '')  + expires + '; path=/;';
+  document.cookie = name + '=' + (value || '') + expires + '; path=/;';
 }
 
 /**
@@ -58,12 +58,12 @@ function setCookie(name, value, days) {
  * @param {string} name
  */
 function getCookie(name) {
-  let nameEQ = name + '=';
-  let ca = document.cookie.split(';');
-  for(let i=0;i < ca.length;i++) {
-    var c = ca[i];
-    while (c.charAt(0)==' ') c = c.substring(1,c.length);
-      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  const nameEQ = name + '=';
+  const ca = document.cookie.split(';');
+  for (let i=0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
   }
   return null;
 }
@@ -100,5 +100,4 @@ $(document).ready(() => {
       setDarkMode();
     }
   });
-
 });

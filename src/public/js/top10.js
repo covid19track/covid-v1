@@ -1,31 +1,29 @@
 console.log('top10.js Initialization');
 
 function loadTop10() {
-  let ctx = document.getElementById('covid').getContext('2d');
+  const ctx = document.getElementById('covid').getContext('2d');
 
-  //console.log(`Canvas found: ${ctx}`);
+  // console.log(`Canvas found: ${ctx}`);
 
-  let graphcountries      = [];
-  let graphcases          = [];
+  const graphcountries = [];
+  const graphcases = [];
 
   $(document).ready(() => {
-
     fetch('https://coronavirus-19-api.herokuapp.com/countries')
-      .then(resp => resp.json())
-      .then(data => {
+        .then((resp) => resp.json())
+        .then((data) => {
+          for (let i = 0; i < 10; i++) {
+            graphcountries[i] = data[i].country;
+            graphcases[i] = data[i].cases;
+          }
 
-        for (let i = 0; i < 10; i++) {
-          graphcountries[i] = data[i].country;
-          graphcases[i] = data[i].cases;
-        }
-
-        let covid_chart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: graphcountries,
-            datasets: [{
-              label: 'Cases Per Country',
-              data: graphcases,
+          const covid_chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: graphcountries,
+              datasets: [{
+                label: 'Cases Per Country',
+                data: graphcases,
                 backgroundColor: [
                   'rgba(360, 0, 0, 0.7)', // 1
                   'rgba(325, 0, 0, 0.7)', // 2
@@ -36,7 +34,7 @@ function loadTop10() {
                   'rgba(200, 0, 0, 0.7)', // 7
                   'rgba(150, 0, 0, 0.7)', // 8
                   'rgba(102, 0, 0, 0.7)', // 9
-                  'rgba(77, 0, 0, 0.7)' // 10
+                  'rgba(77, 0, 0, 0.7)', // 10
                 ],
                 borderColor: [ // borders
                   'rgba(77, 0, 0, 0.7)', // 1
@@ -50,31 +48,30 @@ function loadTop10() {
                   'rgba(325, 0, 0, 0.7)', // 9
                   'rgba(360, 0, 0, 0.7)', // 10
                 ],
-                borderWidth: 1
-              }]
+                borderWidth: 1,
+              }],
             },
             options: { // options
               scales: {
                 yAxes: [{
                   ticks: {
-                    beginAtZero: true
-                  }
-                }]
+                    beginAtZero: true,
+                  },
+                }],
               },
-            responsive: true
-          }
+              responsive: true,
+            },
+          });
+        }).catch((error) => {
+          console.log('Chart.js Error:', error);
         });
-      }).catch(error => {
-        console.log("Chart.js Error:", error);
-      });
   });
-
 }
 
 $('.refresh-btn').click(() => {
-  $(".refresh-btn > i").css({"transition-duration": "1.5s", "transform": "rotate(360deg)"});
-  $(".refresh-btn > i").bind("transitionend", () => {
-    $(".refresh-btn > i").css({"transition-duration": "", "transform": ""});
+  $('.refresh-btn > i').css({'transition-duration': '1.5s', 'transform': 'rotate(360deg)'});
+  $('.refresh-btn > i').bind('transitionend', () => {
+    $('.refresh-btn > i').css({'transition-duration': '', 'transform': ''});
   });
   loadTop10();
 });

@@ -1,9 +1,9 @@
 console.log('main.JS initialization');
 
-//navbar responsiveness
+// navbar responsiveness
 $(document).ready(() => {
-  $(".navbar-burger").click(() => {
-    $(".navbar-burger").toggleClass("is-active");
-    $(".navbar-menu").toggleClass("is-active");
+  $('.navbar-burger').click(() => {
+    $('.navbar-burger').toggleClass('is-active');
+    $('.navbar-menu').toggleClass('is-active');
   });
 });
