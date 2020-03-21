@@ -14,11 +14,11 @@ Fetching data:
 - Automated chart generation based on information about the ten most infected countries, this happens in real time.
 
 ## Under the hood
-* HTML5/CSS/JS for the basics of frontend
-* Bulma for better styles 
-* NodeJS + Express is the backend
-* Pug to preprocess HTML files
-* Fetching the data from this [API](https://coronavirus-19-api.herokuapp.com/countries)
+* HTML5/CSS/JS
+* [Bulma Framework](https://bulma.io)
+* [NodeJS](https://nodejs.org) and [ExpressJS](https://expressjs.com)
+* [PugJS](https://pugjs.org/)
+* CoronaVirus-19 [API](https://coronavirus-19-api.herokuapp.com/countries)
 <a href="https://bulma.io">
 <img src="https://bulma.io/images/made-with-bulma--dark.png" alt="Made with Bulma" width="128" height="24">
 </a>
