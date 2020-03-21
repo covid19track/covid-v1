@@ -5,8 +5,8 @@ let logger = require('morgan');
 
 let indexRouter = require('./routes/index');
 let countriesRouter = require('./routes/countries');
+let developersRouter = require('./routes/developers');
 let geolocateRouter = require('./routes/geolocate');
-
 
 let app = express();
 
@@ -22,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/countries', countriesRouter);
 app.use('/geolocate', geolocateRouter);
+app.use('/developers', developersRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
