@@ -8,6 +8,7 @@ function geolocation() {
     .then(resp => resp.json())
     .then(data => {
       country_code = data.country;
+      if (!country_code) return console.log(90);
       fetch(`https://restcountries.eu/rest/v2/alpha/${country_code}`)
         .then(resp => resp.json())
         .then(data => {
@@ -24,14 +25,18 @@ function geolocation() {
                   `);
                 }
               });
-            });
-        });
-    });
-
+          }).catch(() => {
+            console.log('Request Error');
+          });
+      }).catch(() => {
+        console.log('Request Error');
+      });
+  }).catch(() => {
+    console.log('Request Error');
+  });
 }
 
 $('.refresh-btn').click(() => {
-  console.log(1);
   geolocation();
 });
 
