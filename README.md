@@ -1,8 +1,5 @@
-# COVID-19.Tracker ![GitHub](https://img.shields.io/github/license/pasenidis/covid19-stats?style=for-the-badge)
+# COVID-19.Tracker ![GitHub package.json version](https://img.shields.io/github/package-json/v/pasenidis/covid19-stats?style=for-the-badge)![GitHub](https://img.shields.io/github/license/pasenidis/covid19-stats?style=for-the-badge)
 ### COVID-19.Tracker is an open-source pandemic analysis tool, with it you can get information about the COVID-19 coronavirus outbreak.
-<a href="https://bulma.io">
-<img src="https://bulma.io/images/made-with-bulma--dark.png" alt="Made with Bulma" width="128" height="24">
-</a>
 
 ## Contributing
 Open-source contribution is amazing, if you want to help consider reading the contributing document.
@@ -18,10 +15,13 @@ Fetching data:
 
 ## Under the hood
 * HTML5/CSS/JS for the basics of frontend
-* Bulma for better styles
+* Bulma for better styles 
 * NodeJS + Express is the backend
 * Pug to preprocess HTML files
 * Fetching the data from this [API](https://coronavirus-19-api.herokuapp.com/countries)
+<a href="https://bulma.io">
+<img src="https://bulma.io/images/made-with-bulma--dark.png" alt="Made with Bulma" width="128" height="24">
+</a>
 
 ## The Team Behind This
 1. Edward
