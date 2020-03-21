@@ -1,29 +1,42 @@
 console.log('darkmode.js Intialization');
 
+/**
+ * This function is being called by a button on the webpage,
+ * when called, it inverts the page colors from light to dark
+ */
 function setDarkMode() {
-  $('body').addClass("has-text-light has-background-dark");
-  $('body').removeClass("has-text-dark has-background-light");
+  $('body').addClass('has-text-light has-background-dark');
+  $('body').removeClass('has-text-dark has-background-light');
 
-  $('nav').addClass("is-black");
-  $('nav').removeClass("is-dark");
+  $('nav').addClass('is-black');
+  $('nav').removeClass('is-dark');
 
-  $('#darkmode_btn').addClass("is-dark");
-  $('#darkmode_btn').removeClass("is-light");
+  $('#darkmode_btn').addClass('is-dark');
+  $('#darkmode_btn').removeClass('is-light');
   $("#darkmode_btn").html('Light Mode&nbsp;<i class="las la-sun"></i>')
 }
 
+/**
+ * This function is being called by a button on the webpage,
+ * when called, it resets the color scheme to default
+ */
 function setLightMode() {
-  $('body').addClass("has-text-dark has-background-light");
-  $('body').removeClass("has-text-light has-background-dark");
+  $('body').addClass('has-text-dark has-background-light');
+  $('body').removeClass('has-text-light has-background-dark');
 
-  $('nav').addClass("is-dark");
-  $('nav').removeClass("is-black");
+  $('nav').addClass('is-dark');
+  $('nav').removeClass('is-black');
 
-  $('#darkmode_btn').addClass("is-light");
-  $('#darkmode_btn').removeClass("is-dark");
+  $('#darkmode_btn').addClass('is-light');
+  $('#darkmode_btn').removeClass('is-dark');
   $("#darkmode_btn").html('Dark Mode&nbsp;<i class="las la-moon"></i>')
 }
 
+/**
+ * This function is being used by many other functions,
+ * to set a cookie date.
+ * @param {string} name @param {number} value @param {number} days
+ */
 function setCookie(name, value, days) {
   let expires = "";
   if (days) {
@@ -34,6 +47,10 @@ function setCookie(name, value, days) {
   document.cookie = name + "=" + (value || "")  + expires + "; path=/;";
 }
 
+/**
+ * This function can access a cookie by it's name
+ * @param {string} name
+ */
 function getCookie(name) {
   let nameEQ = name + "=";
   let ca = document.cookie.split(';');

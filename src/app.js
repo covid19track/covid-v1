@@ -1,14 +1,14 @@
-let createError = require('http-errors');
-let express = require('express');
-let path = require('path');
-let logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const logger = require('morgan');
 
-let indexRouter = require('./routes/index');
-let countriesRouter = require('./routes/countries');
-let developersRouter = require('./routes/developers');
-let geolocateRouter = require('./routes/geolocate');
+const indexRouter = require('./routes/index');
+const countriesRouter = require('./routes/countries');
+const developersRouter = require('./routes/developers');
+const geolocateRouter = require('./routes/geolocate');
 
-let app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
