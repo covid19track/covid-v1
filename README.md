@@ -8,7 +8,8 @@ Read it [here](https://github.com/pasenidis/covid19-stats/blob/master/CONTRIBUTI
 ## The Concept
 COVID-19.Tracker is a web-server that fetches, processes and renders data related to the 2019-2020's coronavirus outbreak.
 
-Fetching data:
+Some of the features:
+- Information about how stay safe during the outbreak; 
 - Summary; how many people are infected, how many recovered and how many have died.
 - Country-wise data; recovered per country, how many cases were found a specific day in a country, etc.
 - Automated chart generation based on information about the ten most infected countries, this happens in real time.
