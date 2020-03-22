@@ -20,9 +20,9 @@ function getTotalData(countryNumber) {
 
           let casesCtx = document.getElementById('cases_canvas').getContext('2d');
 
-          if (window.bar) window.bar.destroy();
+          if (window.casesChart) window.casesChart.destroy();
 
-          window.bar = new Chart(casesCtx, {
+          window.casesChart = new Chart(casesCtx, {
             type: 'bar',
             data: {
               labels: countryLabels,
