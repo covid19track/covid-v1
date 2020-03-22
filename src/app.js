@@ -1,3 +1,4 @@
+const figlet = require('figlet');
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
@@ -40,6 +41,19 @@ app.use((err, req, res, next) => {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+
+figlet('Covid-19.Tracker', (err, data) => {
+  if (err) {
+    console.log('Figlet error:');
+    console.dir(err);
+    return;
+  }
+  console.log(data);
+  console.log('https://covid-19-system.herokuapp.com');
+  console.log('https://github.com/pasenidis/covid19-stats');
+  console.log('=> Edward & Lean');
 });
 
 module.exports = app;

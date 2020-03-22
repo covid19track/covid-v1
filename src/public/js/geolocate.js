@@ -33,7 +33,7 @@ function geolocation() {
                             datasets: [{
                               label: 'People',
                               data: [item.cases, item.todatCases, item.deaths, item.todayDeaths, item.recovered, item.active, item.critical],
-                              backgroundColor: 'rgba(255, 0, 0, 0.7)'
+                              backgroundColor: 'rgba(255, 0, 0, 0.7)',
                             }],
                           },
                           options: { // options
