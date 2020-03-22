@@ -9,7 +9,7 @@
     "start": "node ./src/bin/www"
   },
   "dependencies": {
-    "acorn": ">=5.7.4",
+    "acorn": "^7.1.1",
     "bulma": "0.8.0",
     "bulma-extensions": "6.2.7",
     "compile-sass": "1.1.0",
