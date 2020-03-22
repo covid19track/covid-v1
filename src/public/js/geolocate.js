@@ -33,25 +33,7 @@ function geolocation() {
                             datasets: [{
                               label: 'People',
                               data: [item.cases, item.todatCases, item.deaths, item.todayDeaths, item.recovered, item.active, item.critical],
-                              backgroundColor: [
-                                'rgba(360, 0, 0, 0.7)', // 1
-                                'rgba(325, 0, 0, 0.7)', // 2
-                                'rgba(300, 0, 0, 0.7)', // 3
-                                'rgba(270, 0, 0, 0.7)', // 4
-                                'rgba(255, 0, 0, 0.7)', // 5
-                                'rgba(230, 0, 0, 0.7)', // 6
-                                'rgba(200, 0, 0, 0.7)', // 7
-                              ],
-                              borderColor: [ // borders
-                                'rgba(77, 0, 0, 0.7)', // 1
-                                'rgba(102, 0, 0, 0.7)', // 2
-                                'rgba(150, 0, 0, 0.7)', // 3
-                                'rgba(200, 0, 0, 0.7)', // 4
-                                'rgba(230, 0, 0, 0.7)', // 5
-                                'rgba(255, 0, 0, 0.7)', // 6
-                                'rgba(230, 0, 0, 0.7)', // 7
-                              ],
-                              borderWidth: 1,
+                              backgroundColor: 'rgba(255, 0, 0, 0.7)'
                             }],
                           },
                           options: { // options
@@ -64,8 +46,6 @@ function geolocation() {
                             },
                             responsive: true,
                           },
-                        }).catch((error) => {
-                          console.log('Chart.js Error:', error);
                         });
                       }
                     });
