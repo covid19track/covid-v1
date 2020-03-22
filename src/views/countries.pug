@@ -10,27 +10,11 @@
     include nav.pug
 
     <div class="section">
-      <div class="container">
+      <div class="container has-text-centered">
 
         <!-- Header -->
-        <h1 align="center" id="pheader" class="header">COVID-19.Tracker</h1>
-        <h2 align="center" id="psubheader" class="subheader">A pandemic analysis tool.</h2>
-
-        <!-- Brief Statistics -->
-        <div class="brief">
-          <p id="cdrtext">Cases: <br><br>Deaths: <br><br>Recovered: </p>
-        </div>
-
-        <!-- Switches -->
-        <div class="sw">
-          <button id="switcher" class="switch" onclick="setDarkMode()">Dark Mode</button>
-          <button id="reload" class="reloader" onclick="main()">Refresh</button>
-        </div>
-
-        <!-- Charts -->
-        <div class="chart" id="chart">
-          <canvas class="stats" id="covid" aria-label="Your browser does not support my webpage!"></canvas>
-        </div>
+        <h1 id="header" class="is-size-1">COVID-19.Tracker</h1>
+        <h2 id="subheader" class="is-size-2 has-margin-30">A pandemic analysis tool.</h2>
 
       </div>
     </div>
