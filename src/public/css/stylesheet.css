@@ -27,6 +27,11 @@ body {
   margin-bottom: 40px;
 }
 
+.slider {
+  margin-top: 2%;
+  width: 100%;
+}
+
 #header, #subheader {
   transition-duration: 0.4s;
   animation: h-slide-up 0.6s ease;
