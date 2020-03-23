@@ -57,7 +57,9 @@ function setLightMode() {
 /**
  * This function is being used by many other functions,
  * to set a cookie date.
- * @param {string} name @param {number} value @param {number} days
+ * @param {string} name 
+ * @param {number} value 
+ * @param {number} days
  */
 function setCookie(name, value, days) {
   let expires = '';
