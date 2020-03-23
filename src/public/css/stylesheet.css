@@ -6,7 +6,7 @@ body {
   margin-top: 5%;
 }
 
-.navbar-brand > a {
+.navbar-brand>a {
   font-family: 'Fredoka One', cursive;
 }
 
@@ -38,41 +38,72 @@ body {
 }
 
 @keyframes img-slide-down {
-    0% {
-      opacity: 0;
-      transform: translateY(-200px);
-    } 100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @keyframes h-slide-right {
-    0% {
-      opacity: 0;
-      transform: translateX(-100px);
-    } 100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
   }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 @keyframes h-slide-up {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    } 100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @keyframes p-slide-left {
-    0% {
-      opacity: 0;
-      transform: translateX(100px);
-    } 100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
   }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Info Page */
+
+.infos {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+}
+
+.info {
+  border-spacing: 5px;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ffdd57;
+}
+
+@keyframes boxfade {
+  from {background: white; color:black;}
+  to {background: #888; color: white;}
+}
+
+.info:hover {
+  background: #888;
+  color: white;
+  animation: boxfade 1s;
+}
