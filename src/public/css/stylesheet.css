@@ -138,13 +138,12 @@ body {
   border: 1px solid #ffdd57;
 }
 
-@keyframes boxfade {
-  from {background: white; color:black;}
-  to {background: #888; color: white;}
-}
-
 .info:hover {
   background: #888;
-  color: white;
+  color: black;
   animation: boxfade 1s;
+}
+
+.info:focus {
+  border: 2px solid #ffdd57;
 }

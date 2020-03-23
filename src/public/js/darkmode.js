@@ -17,6 +17,14 @@ function setDarkMode() {
   $('#darkmode_btn').addClass('is-light');
   $('#darkmode_btn').removeClass('is-black');
   $('#darkmode_btn').html('Light Mode&nbsp;<i class=\'las la-sun\'></i>');
+
+  $('#warning').addClass('has-background-black');
+  $('#warning').removeClass('has-background-light');
+
+  for (let i = 1; i <= 6; i++) {
+    $(`#info${i}`).addClass('has-background-black');
+    $(`#info${i}`).removeClass('has-background-light');
+  }
 }
 
 /**
@@ -36,6 +44,14 @@ function setLightMode() {
   $('#darkmode_btn').addClass('is-black');
   $('#darkmode_btn').removeClass('is-light');
   $('#darkmode_btn').html('Dark Mode&nbsp;<i class=\'las la-moon\'></i>');
+
+  $('#warning').addClass('has-background-light');
+  $('#warning').removeClass('has-background-dark');
+
+  for (let i = 1; i <= 6; i++) {
+    $(`#info${i}`).addClass('has-background-light');
+    $(`#info${i}`).removeClass('has-background-dark');
+  }
 }
 
 /**
