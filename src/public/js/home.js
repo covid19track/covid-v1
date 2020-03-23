@@ -34,24 +34,24 @@ function geolocation() {
                                 display: true,
                                 color: 'rgba(128, 128, 128, 0.6)',
                                 zeroLineColor: '#808080',
-                                lineWidth: 1
+                                lineWidth: 1,
                               },
                               ticks: {
                                 fontColor: '#808080',
                                 beginAtZero: true,
-                              }
+                              },
                             }],
                             xAxes: [{
                               gridLines: {
                                 display: true,
                                 color: 'rgba(128, 128, 128, 0.3)',
                                 zeroLineColor: '#808080',
-                                lineWidth: 1
+                                lineWidth: 1,
                               },
                               ticks: {
                                 fontColor: '#808080',
                                 beginAtZero: true,
-                              }
+                              },
                             }],
                           },
                           responsive: true,
@@ -69,7 +69,7 @@ function geolocation() {
                               backgroundColor: 'rgba(255, 0, 0, 0.7)',
                             }],
                           },
-                          options: chartOptions
+                          options: chartOptions,
                         });
                         console.log('Debugging:', covidChart);
                       }

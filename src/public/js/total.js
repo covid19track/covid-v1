@@ -40,24 +40,24 @@ function getTotalData(countryNumber) {
                 display: true,
                 color: 'rgba(128, 128, 128, 0.6)',
                 zeroLineColor: '#808080',
-                lineWidth: 1
+                lineWidth: 1,
               },
               ticks: {
                 fontColor: '#808080',
                 beginAtZero: true,
-              }
+              },
             }],
             xAxes: [{
               gridLines: {
                 display: true,
                 color: 'rgba(128, 128, 128, 0.3)',
                 zeroLineColor: '#808080',
-                lineWidth: 1
+                lineWidth: 1,
               },
               ticks: {
                 fontColor: '#808080',
                 beginAtZero: true,
-              }
+              },
             }],
           },
           responsive: true,
@@ -79,14 +79,13 @@ function getTotalData(countryNumber) {
         if (window.activeChart) window.activeChart.destroy();
         if (window.criticalChart) window.criticalChart.destroy();
 
-        window.casesChart = new Chart(casesCtx,{type:'bar',data:{labels:countryLabels,datasets:[{label:'Cases',data:countryCases,backgroundColor:'rgba(255, 0, 0, 0.8)',}],},options:chartOptions});
-        window.casesTodayChart = new Chart(casesTodayCtx,{type:'bar',data:{labels:countryLabels,datasets:[{label:'Cases Today',data:countryCasesToday,backgroundColor:'rgba(255, 0, 0, 0.8)',}],},options:chartOptions});
-        window.deathsChart = new Chart(deathsCtx,{type:'bar',data:{labels:countryLabels,datasets:[{label:'Deaths',data:countryDeaths,backgroundColor:'rgba(255, 0, 0, 0.8)',}],},options:chartOptions});
-        window.deathsTodayChart = new Chart(deathsTodayCtx,{type:'bar',data:{labels:countryLabels,datasets:[{label:'Deaths Today',data:countryDeathsToday,backgroundColor:'rgba(255, 0, 0, 0.8)',}],},options:chartOptions});
-        window.recoveredChart = new Chart(recoveredCtx,{type:'bar',data:{labels:countryLabels,datasets:[{label:'Recovered',data:countryRecovered,backgroundColor:'rgba(255, 0, 0, 0.8)',}],},options:chartOptions});
-        window.activeChart = new Chart(activeCtx,{type:'bar',data:{labels:countryLabels,datasets:[{label:'Active',data:countryActive,backgroundColor:'rgba(255, 0, 0, 0.8)',}],},options:chartOptions});
-        window.criticalChart = new Chart(criticalCtx,{type:'bar',data:{labels:countryLabels,datasets:[{label:'Critical',data:countryCritical,backgroundColor:'rgba(255, 0, 0, 0.8)',}],},options:chartOptions});
-
+        window.casesChart = new Chart(casesCtx, {type: 'bar', data: {labels: countryLabels, datasets: [{label: 'Cases', data: countryCases, backgroundColor: 'rgba(255, 0, 0, 0.8)'}]}, options: chartOptions});
+        window.casesTodayChart = new Chart(casesTodayCtx, {type: 'bar', data: {labels: countryLabels, datasets: [{label: 'Cases Today', data: countryCasesToday, backgroundColor: 'rgba(255, 0, 0, 0.8)'}]}, options: chartOptions});
+        window.deathsChart = new Chart(deathsCtx, {type: 'bar', data: {labels: countryLabels, datasets: [{label: 'Deaths', data: countryDeaths, backgroundColor: 'rgba(255, 0, 0, 0.8)'}]}, options: chartOptions});
+        window.deathsTodayChart = new Chart(deathsTodayCtx, {type: 'bar', data: {labels: countryLabels, datasets: [{label: 'Deaths Today', data: countryDeathsToday, backgroundColor: 'rgba(255, 0, 0, 0.8)'}]}, options: chartOptions});
+        window.recoveredChart = new Chart(recoveredCtx, {type: 'bar', data: {labels: countryLabels, datasets: [{label: 'Recovered', data: countryRecovered, backgroundColor: 'rgba(255, 0, 0, 0.8)'}]}, options: chartOptions});
+        window.activeChart = new Chart(activeCtx, {type: 'bar', data: {labels: countryLabels, datasets: [{label: 'Active', data: countryActive, backgroundColor: 'rgba(255, 0, 0, 0.8)'}]}, options: chartOptions});
+        window.criticalChart = new Chart(criticalCtx, {type: 'bar', data: {labels: countryLabels, datasets: [{label: 'Critical', data: countryCritical, backgroundColor: 'rgba(255, 0, 0, 0.8)'}]}, options: chartOptions});
       }).catch(() => {
         console.log('Request Error');
       });
