@@ -7,7 +7,7 @@ Here are some important & useful resources you should read:
 - Project's Code of Conduct: [Markdown](https://github.com/pasenidis/covid19-stats/blob/master/CODE_OF_CONDUCT.md)
 - License we use, MIT License: [Markdown](https://github.com/pasenidis/covid19-stats/blob/master/LICENSE)
 - README file for basic information: [Markdown](https://github.com/pasenidis/covid19-stats/blob/master/README.md)
-- Google's JavaScript Style Guides [Markdown](https://google.github.io/styleguide/jsguide.html)
+- Google's JavaScript Style Guides: [Markdown](https://google.github.io/styleguide/jsguide.html)
 
 ## Testing
 We don't have a specific group of people that are engaged in the application testing.
