@@ -1,4 +1,4 @@
-console.log('geolocate.js Intialization');
+console.log('home.js Intialization');
 
 /**
  * This function finds the country of the webpage visitor.
