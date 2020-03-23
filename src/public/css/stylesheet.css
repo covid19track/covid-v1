@@ -6,15 +6,11 @@ body {
   margin-top: 5%;
 }
 
-<<<<<<< HEAD
-.navbar-brand>a {
-=======
 .navbar {
   box-shadow: 0px 14px 26px -10px rgba(0,0,0,0.75);
 }
 
 .navbar-brand > a {
->>>>>>> 50fe673d14a16389082b3144196c2819dd66c6c8
   font-family: 'Fredoka One', cursive;
 }
 
