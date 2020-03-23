@@ -14,14 +14,34 @@
 
         //- Header
         <h1 id="header" class="is-size-1">COVID-19.Tracker</h1>
-        <h2 id="subheader" class="is-size-2 has-margin-30">A pandemic analysis tool.</h2>
-        <h2 id="subheader" class="is-size-1" style="margin-top: 4%">Worldwide Statistics <i class="las la-globe"></i></h2>
+        <h2 id="subheader" class="is-size-2">A pandemic analysis tool.</h2>
+        <h2 id="subheader" class="is-size-3" style="margin-top: 4%; margin-bottom: 5%;">Worldwide Statistics <i class="las la-globe"></i></h2>
+
+        //- Country Slider
+        <input type="range" min="10" value="10" step="10" class="slider" id="slider">
+        <p id="subheader" class="is-size-4" style="margin-bottom: 5%;">Countries Shown:&nbsp;<span class="country-number"></span></p>
 
         //- Charts
         <div class="cases-chart" id="cases_chart">
           <canvas class="cases-canvas" id="cases_canvas" aria-label="Your browser does not support chart.js"></canvas>
-          <input type="range" min="10" value="10" step="10" class="slider" id="slider">
-          <p class="country-number"></p>
+        </div>
+        <div class="cases-today-chart" id="cases_today_chart">
+          <canvas class="cases-today-canvas" id="cases_today_canvas" aria-label="Your browser does not support chart.js"></canvas>
+        </div>
+        <div class="deaths-chart" id="deaths_chart">
+          <canvas class="deaths-canvas" id="deaths_canvas" aria-label="Your browser does not support chart.js"></canvas>
+        </div>
+        <div class="deaths-today-chart" id="deaths_today_chart">
+          <canvas class="deaths-today-canvas" id="deaths_today_canvas" aria-label="Your browser does not support chart.js"></canvas>
+        </div>
+        <div class="recovered-chart" id="recovered_chart">
+          <canvas class="recovered-canvas" id="recovered_canvas" aria-label="Your browser does not support chart.js"></canvas>
+        </div>
+        <div class="active-chart" id="active_chart">
+          <canvas class="active-canvas" id="active_canvas" aria-label="Your browser does not support chart.js"></canvas>
+        </div>
+        <div class="critical-chart" id="critical_chart">
+          <canvas class="critical-canvas" id="critical_canvas" aria-label="Your browser does not support chart.js"></canvas>
         </div>
 
       </div>

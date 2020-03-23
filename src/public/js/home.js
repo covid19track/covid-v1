@@ -27,6 +27,36 @@ function geolocation() {
                               <p class="stat-p">Cases: ${item.cases} | Deaths: ${item.deaths} | Recovered: ${item.recovered}</p>
                               `);
 
+                        const chartOptions = {
+                          scales: {
+                            yAxes: [{
+                              gridLines: {
+                                display: true,
+                                color: 'rgba(128, 128, 128, 0.6)',
+                                zeroLineColor: '#808080',
+                                lineWidth: 1
+                              },
+                              ticks: {
+                                fontColor: '#808080',
+                                beginAtZero: true,
+                              }
+                            }],
+                            xAxes: [{
+                              gridLines: {
+                                display: true,
+                                color: 'rgba(128, 128, 128, 0.3)',
+                                zeroLineColor: '#808080',
+                                lineWidth: 1
+                              },
+                              ticks: {
+                                fontColor: '#808080',
+                                beginAtZero: true,
+                              }
+                            }],
+                          },
+                          responsive: true,
+                        };
+
                         const ctx = document.getElementById('covid').getContext('2d');
 
                         const covidChart = new Chart(ctx, {
@@ -39,16 +69,7 @@ function geolocation() {
                               backgroundColor: 'rgba(255, 0, 0, 0.7)',
                             }],
                           },
-                          options: { // options
-                            scales: {
-                              yAxes: [{
-                                ticks: {
-                                  beginAtZero: true,
-                                },
-                              }],
-                            },
-                            responsive: true,
-                          },
+                          options: chartOptions
                         });
                         console.log('Debugging:', covidChart);
                       }

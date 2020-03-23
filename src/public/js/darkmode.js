@@ -5,6 +5,9 @@ console.log('darkmode.js Intialization');
  * when called, it inverts the page colors from light to dark
  */
 function setDarkMode() {
+  $('html').addClass('has-background-dark');
+  $('html').removeClass('has-background-light');
+
   $('body').addClass('has-text-light has-background-dark');
   $('body').removeClass('has-text-dark has-background-light');
 
@@ -32,6 +35,9 @@ function setDarkMode() {
  * when called, it resets the color scheme to default
  */
 function setLightMode() {
+  $('html').addClass('has-background-light');
+  $('html').removeClass('has-background-dark');
+
   $('body').addClass('has-text-dark has-background-light');
   $('body').removeClass('has-text-light has-background-dark');
 
