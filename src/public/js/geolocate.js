@@ -1,5 +1,8 @@
 console.log('geolocate.js Intialization');
 
+/**
+ * This function finds the country of the webpage visitor.
+ */
 function geolocation() {
   let countryCode;
   let countryName;
@@ -47,6 +50,7 @@ function geolocation() {
                             responsive: true,
                           },
                         });
+                        console.log('Debugging:', covidChart);
                       }
                     });
                   }).catch(() => {

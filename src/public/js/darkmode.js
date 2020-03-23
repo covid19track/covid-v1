@@ -57,8 +57,8 @@ function setLightMode() {
 /**
  * This function is being used by many other functions,
  * to set a cookie date.
- * @param {string} name 
- * @param {number} value 
+ * @param {string} name
+ * @param {number} value
  * @param {number} days
  */
 function setCookie(name, value, days) {
@@ -74,6 +74,7 @@ function setCookie(name, value, days) {
 /**
  * This function can access a cookie by it's name
  * @param {string} name
+ * @return {string}
  */
 function getCookie(name) {
   const nameEQ = name + '=';

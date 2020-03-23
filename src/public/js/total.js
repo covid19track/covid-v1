@@ -1,5 +1,9 @@
 console.log('total.js initialization');
 
+/**
+ * This function fetches the total data using the fetch API
+ * @param {number} countryNumber
+ */
 function getTotalData(countryNumber) {
   fetch('https://coronavirus-19-api.herokuapp.com/countries')
       .then((resp) => resp.json())
