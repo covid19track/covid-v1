@@ -5,6 +5,12 @@
 Open-source contribution is amazing, if you want to help consider reading the contributing document.
 Read it [here](https://github.com/pasenidis/covid19-stats/blob/master/CONTRIBUTING.md).
 
+## Upcoming Features
+- [ ] Maps
+- [ ] Tables
+- [ ] Country
+- [ ] Search
+
 ## The Concept
 COVID-19.Tracker is a web-server that fetches, processes and renders data related to the 2019-2020's coronavirus outbreak.
 
