@@ -29,6 +29,9 @@ Some of the features:
 <img src="https://bulma.io/images/made-with-bulma--dark.png" alt="Made with Bulma" width="128" height="24">
 </a>
 
+## Forks
+* cfanouli's fork | [GitHub](https://github.com/cfanoulis/covid19-stats)
+
 ## The Team Behind This
 1. Edward
     * [Twitter](https://twitter.com/EdwardPasenidis)
