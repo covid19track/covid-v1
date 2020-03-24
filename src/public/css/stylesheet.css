@@ -163,21 +163,17 @@ canvas {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: white;
 }
 
 .info {
   border-spacing: 5px;
-  background: white;
   padding: 20px;
   border: 1px solid #ffdd57;
 }
 
-.info:hover {
-  background: #888;
-  color: black;
+.light1, .light2, .light3 {
+  animation: card-slide-left .75s;
 }
-
-.info:focus {
-  border: 2px solid #ffdd57;
+.light4, .light5, .light6 {
+  animation: card-slide-right .75s;
 }
