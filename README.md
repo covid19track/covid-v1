@@ -5,6 +5,11 @@
 Open-source contribution is amazing, if you want to help consider reading the contributing document.
 Read it [here](https://github.com/pasenidis/covid19-stats/blob/master/CONTRIBUTING.md).
 
+## Upcoming Features
+- [ ] Maps
+- [ ] Tables
+- [ ] Country Search
+
 ## The Concept
 COVID-19.Tracker is a web-server that fetches, processes and renders data related to the 2019-2020's coronavirus outbreak.
 
@@ -23,6 +28,9 @@ Some of the features:
 <a href="https://bulma.io">
 <img src="https://bulma.io/images/made-with-bulma--dark.png" alt="Made with Bulma" width="128" height="24">
 </a>
+
+## Forks
+* cfanouli's fork | [GitHub](https://github.com/cfanoulis/covid19-stats)
 
 ## The Team Behind This
 1. Edward
