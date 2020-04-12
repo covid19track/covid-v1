@@ -1,4 +1,4 @@
-# WARNING! THIS PROJECT IS DEPRECATED! WE DO NOT GUARANTEE ANY STABILITY!
+# WARNING! THIS PROJECT IS DEPRECATED! WE DO NOT GUARANTEE ANY STABILITY! [UP-TO-DATE](https://covidtrack.tk)
 # COVID-19.Tracker
 ### COVID-19.Tracker is an open-source pandemic analysis tool, with it you can get information about the COVID-19 coronavirus outbreak.
 
@@ -33,7 +33,7 @@ Some of the features:
 ## Forks
 * cfanouli's fork | [GitHub](https://github.com/cfanoulis/covid19-stats)
 
-## The Team Behind This
+## The Team Behind v1
 1. Edward
     * [Twitter](https://twitter.com/EdwardPasenidis)
     * [Discord](https://discord.gg/vBfeT8D)
