@@ -1,4 +1,5 @@
-# COVID-19.Tracker ![GitHub package.json version](https://img.shields.io/github/package-json/v/pasenidis/covid19-stats?style=for-the-badge)![GitHub](https://img.shields.io/github/license/pasenidis/covid19-stats?style=for-the-badge)
+# WARNING! THIS PROJECT IS DEPRECATED! WE DO NOT GUARANTEE ANY STABILITY!
+# COVID-19.Tracker
 ### COVID-19.Tracker is an open-source pandemic analysis tool, with it you can get information about the COVID-19 coronavirus outbreak.
 
 ## Contributing
