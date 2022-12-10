@@ -11,7 +11,7 @@
   "dependencies": {
     "acorn": "^7.1.1",
     "debug": "~2.6.9",
-    "express": "~4.16.1",
+    "express": "~4.17.3",
     "figlet": "^1.3.0",
     "http-errors": "~1.6.3",
     "ipinfo": "^1.3.9",
